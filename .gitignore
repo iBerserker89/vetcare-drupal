@@ -13,7 +13,7 @@
 /web/sites/*/private/
 
 # Local Drupal settings
-/web/sites/*/settings.php
+/web/sites/*/settings.ddev.php
 /web/sites/*/settings.local.php
 /web/sites/*/services.yml
 /web/sites/*/development.services.yml
