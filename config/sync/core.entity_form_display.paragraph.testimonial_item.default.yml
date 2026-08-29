@@ -1,0 +1,52 @@
+uuid: 83dd1906-622f-45a7-89c6-06883d134b9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testimonial_item.field_name
+    - field.field.paragraph.testimonial_item.field_photo
+    - field.field.paragraph.testimonial_item.field_quote
+    - field.field.paragraph.testimonial_item.field_role
+    - paragraphs.paragraphs_type.testimonial_item
+id: paragraph.testimonial_item.default
+targetEntityType: paragraph
+bundle: testimonial_item
+mode: default
+content:
+  field_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_photo:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quote:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_role:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

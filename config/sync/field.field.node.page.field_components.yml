@@ -1,0 +1,67 @@
+uuid: e43ceb49-52b6-4a51-ab04-058f6287df8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.page
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.featured_content
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.rich_text
+    - paragraphs.paragraphs_type.stats
+    - paragraphs.paragraphs_type.testimonials
+    - paragraphs.paragraphs_type.text_media
+  module:
+    - entity_reference_revisions
+id: node.page.field_components
+field_name: field_components
+entity_type: node
+bundle: page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cta: cta
+      featured_content: featured_content
+      hero: hero
+      rich_text: rich_text
+      stats: stats
+      testimonials: testimonials
+      text_media: text_media
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 10
+        enabled: true
+      featured_content:
+        weight: 11
+        enabled: true
+      hero:
+        weight: 12
+        enabled: true
+      rich_text:
+        weight: 13
+        enabled: true
+      stat_item:
+        weight: 14
+        enabled: false
+      stats:
+        weight: 15
+        enabled: true
+      testimonial_item:
+        weight: 16
+        enabled: false
+      testimonials:
+        weight: 17
+        enabled: true
+      text_media:
+        weight: 18
+        enabled: true
+field_type: entity_reference_revisions

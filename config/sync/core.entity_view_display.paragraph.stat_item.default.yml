@@ -1,0 +1,32 @@
+uuid: 81cc665e-e76e-4316-9d49-b249c3fba699
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stat_item.field_label
+    - field.field.paragraph.stat_item.field_value
+    - paragraphs.paragraphs_type.stat_item
+id: paragraph.stat_item.default
+targetEntityType: paragraph
+bundle: stat_item
+mode: default
+content:
+  field_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_value:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

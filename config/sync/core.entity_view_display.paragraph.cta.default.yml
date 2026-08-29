@@ -1,0 +1,56 @@
+uuid: 5175fe76-1ce6-40b6-b9f0-73fc5c347653
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta.field_eyebrow
+    - field.field.paragraph.cta.field_heading
+    - field.field.paragraph.cta.field_primary_link
+    - field.field.paragraph.cta.field_text
+    - paragraphs.paragraphs_type.cta
+  module:
+    - link
+    - text
+id: paragraph.cta.default
+targetEntityType: paragraph
+bundle: cta
+mode: default
+content:
+  field_eyebrow:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_primary_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

@@ -1,0 +1,53 @@
+uuid: 18aaa28d-7b7d-439e-a33f-4c78f596a553
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta.field_eyebrow
+    - field.field.paragraph.cta.field_heading
+    - field.field.paragraph.cta.field_primary_link
+    - field.field.paragraph.cta.field_text
+    - paragraphs.paragraphs_type.cta
+  module:
+    - link
+    - text
+id: paragraph.cta.default
+targetEntityType: paragraph
+bundle: cta
+mode: default
+content:
+  field_eyebrow:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_primary_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

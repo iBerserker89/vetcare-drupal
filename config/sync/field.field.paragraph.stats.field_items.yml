@@ -1,0 +1,55 @@
+uuid: 22b0ee44-04a9-4d02-a4c0-5c1535a79eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items
+    - paragraphs.paragraphs_type.stat_item
+    - paragraphs.paragraphs_type.stats
+  module:
+    - entity_reference_revisions
+id: paragraph.stats.field_items
+field_name: field_items
+entity_type: paragraph
+bundle: stats
+label: Items
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      stat_item: stat_item
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 10
+        enabled: false
+      featured_content:
+        weight: 11
+        enabled: false
+      hero:
+        weight: 12
+        enabled: false
+      rich_text:
+        weight: 13
+        enabled: false
+      stat_item:
+        weight: 15
+        enabled: true
+      stats:
+        weight: 14
+        enabled: false
+      testimonial_item:
+        weight: 17
+        enabled: false
+      testimonials:
+        weight: 16
+        enabled: false
+      text_media:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

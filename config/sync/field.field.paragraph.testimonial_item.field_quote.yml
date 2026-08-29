@@ -1,0 +1,19 @@
+uuid: cce88838-cbfd-454f-b17c-830a42e82e52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quote
+    - paragraphs.paragraphs_type.testimonial_item
+id: paragraph.testimonial_item.field_quote
+field_name: field_quote
+entity_type: paragraph
+bundle: testimonial_item
+label: Quote
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

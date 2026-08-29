@@ -1,0 +1,32 @@
+uuid: ecc23e45-75f2-4409-aaea-dd03dd308386
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stat_item.field_label
+    - field.field.paragraph.stat_item.field_value
+    - paragraphs.paragraphs_type.stat_item
+id: paragraph.stat_item.default
+targetEntityType: paragraph
+bundle: stat_item
+mode: default
+content:
+  field_label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_value:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

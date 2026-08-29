@@ -1,0 +1,38 @@
+uuid: ce2f0a37-73e1-4d0b-b31c-e1340355e8e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_content.field_content_kind
+    - field.field.paragraph.featured_content.field_heading
+    - field.field.paragraph.featured_content.field_item_limit
+    - paragraphs.paragraphs_type.featured_content
+id: paragraph.featured_content.default
+targetEntityType: paragraph
+bundle: featured_content
+mode: default
+content:
+  field_content_kind:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_limit:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

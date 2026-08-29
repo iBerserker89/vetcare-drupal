@@ -1,0 +1,25 @@
+uuid: e55bf416-6829-44ca-b509-e829e5cc45a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_limit
+    - paragraphs.paragraphs_type.featured_content
+id: paragraph.featured_content.field_item_limit
+field_name: field_item_limit
+entity_type: paragraph
+bundle: featured_content
+label: 'Item limit'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings:
+  min: 1
+  max: 6
+  prefix: ''
+  suffix: ''
+field_type: integer

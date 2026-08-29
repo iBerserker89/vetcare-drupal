@@ -1,0 +1,73 @@
+uuid: 0a5b9d3a-ac19-4873-a40f-35d5fa571e44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_eyebrow
+    - field.field.paragraph.hero.field_heading
+    - field.field.paragraph.hero.field_image
+    - field.field.paragraph.hero.field_primary_link
+    - field.field.paragraph.hero.field_secondary_link
+    - field.field.paragraph.hero.field_text
+    - paragraphs.paragraphs_type.hero
+  module:
+    - link
+    - text
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_eyebrow:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_primary_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_secondary_link:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
