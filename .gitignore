@@ -1,3 +1,31 @@
+# Composer dependencies
+/vendor/
+
+# Drupal core and contributed extensions managed by Composer
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Drupal runtime files
+/web/sites/*/files/
+/web/sites/*/private/
+
+# Local Drupal settings
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
+/web/sites/*/development.services.yml
+
+# DDEV local overrides
+/.ddev/config.local.yaml
 
 # Local Git worktrees
-.worktrees/
+/.worktrees/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
