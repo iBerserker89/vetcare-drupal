@@ -1,0 +1,19 @@
+uuid: 6804510b-f25c-43fc-8076-2aee8187a780
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.service
+id: node.service.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: service
+label: 'Short description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+uuid: df33e853-314c-4acb-b57c-472ceb337876
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured
+    - node.type.service
+id: node.service.field_featured
+field_name: field_featured
+entity_type: node
+bundle: service
+label: Featured
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,15 @@
+uuid: 6aab159e-75f2-4507-8824-38e722076314
+langcode: en
+status: true
+dependencies: {  }
+name: vetcare_article
+label: 'VetCare Article'
+effects:
+  22ea7b7a-7d3d-4b11-ba61-b3132633cb10:
+    uuid: 22ea7b7a-7d3d-4b11-ba61-b3132633cb10
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 675
+      anchor: center-center

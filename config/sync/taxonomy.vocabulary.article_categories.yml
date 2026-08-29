@@ -1,0 +1,9 @@
+uuid: 10ea7ae9-c309-4f5a-b486-d74e75fa4a0f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Categories'
+vid: article_categories
+description: null
+weight: 0
+new_revision: false

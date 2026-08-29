@@ -1,0 +1,15 @@
+uuid: bd79e9e5-7699-49a6-a424-1a195a39ac01
+langcode: en
+status: true
+dependencies: {  }
+name: vetcare_profile
+label: 'VetCare Profile'
+effects:
+  e74b124f-e467-4fc9-804b-e7002cf6910d:
+    uuid: e74b124f-e467-4fc9-804b-e7002cf6910d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 900
+      anchor: center-center

@@ -1,0 +1,18 @@
+uuid: e4c303d2-37c4-4926-bdf5-4b49c0a56a68
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.veterinarian
+id: node.veterinarian.title
+field_name: title
+entity_type: node
+bundle: veterinarian
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 49eedde9-7bc2-40bd-83c3-14b6438bdbc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.veterinarian
+  module:
+    - node
+id: veterinarian
+label: Veterinarian
+type: 'canonical_entities:node'
+pattern: '/veterinarians/[node:title]'
+selection_criteria:
+  978648ec-1739-4d87-95af-5d5741a8d25d:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      veterinarian: veterinarian
+selection_logic: and
+weight: -5
+relationships: {  }

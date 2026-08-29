@@ -1,0 +1,15 @@
+uuid: 899eca16-2e8a-4202-994e-d3d781ac7265
+langcode: en
+status: true
+dependencies: {  }
+name: vetcare_card
+label: 'VetCare Card'
+effects:
+  9fae86bd-0088-4f35-ad97-2919bec8fabe:
+    uuid: 9fae86bd-0088-4f35-ad97-2919bec8fabe
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 420
+      anchor: center-center

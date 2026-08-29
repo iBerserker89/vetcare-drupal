@@ -1,0 +1,74 @@
+uuid: dcb0859d-a34e-4994-acc6-d676e01ea838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.veterinarian.field_biography
+    - field.field.node.veterinarian.field_featured
+    - field.field.node.veterinarian.field_photo
+    - field.field.node.veterinarian.field_services
+    - field.field.node.veterinarian.field_short_bio
+    - field.field.node.veterinarian.field_specialty
+    - node.type.veterinarian
+  module:
+    - text
+    - user
+id: node.veterinarian.default
+targetEntityType: node
+bundle: veterinarian
+mode: default
+content:
+  field_biography:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_featured:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_photo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_services:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_short_bio:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_specialty:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

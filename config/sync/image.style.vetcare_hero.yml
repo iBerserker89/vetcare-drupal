@@ -1,0 +1,15 @@
+uuid: 38b16053-3c84-4d2b-97a8-62db3d707294
+langcode: en
+status: true
+dependencies: {  }
+name: vetcare_hero
+label: 'VetCare Hero'
+effects:
+  b167bdf1-8920-4643-84a1-d6f81583e348:
+    uuid: b167bdf1-8920-4643-84a1-d6f81583e348
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 900
+      anchor: center-center

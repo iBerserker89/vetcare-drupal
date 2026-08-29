@@ -1,0 +1,9 @@
+uuid: ffd661d0-c262-4762-9dfc-784b1fdefdb7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Veterinary Specialties'
+vid: veterinary_specialties
+description: null
+weight: 0
+new_revision: false

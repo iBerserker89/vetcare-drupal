@@ -1,0 +1,39 @@
+uuid: f4acc62a-e866-4652-83f6-79cc3dcc58fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_icon
+field_name: field_icon
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: emergency|emergency
+      label: Emergency
+    -
+      value: preventive|preventive
+      label: 'Preventive Care'
+    -
+      value: vaccination|vaccination
+      label: Vaccination
+    -
+      value: surgery|surgery
+      label: Surgery
+    -
+      value: dental|dental
+      label: 'Dental Care'
+    -
+      value: diagnostics|diagnostics
+      label: Diagnostics
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

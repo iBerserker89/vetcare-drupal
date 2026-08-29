@@ -1,0 +1,22 @@
+uuid: 9b63e58b-c378-4be7-98bb-50e3dcc44a02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - node.type.veterinarian
+  module:
+    - text
+id: node.veterinarian.field_biography
+field_name: field_biography
+entity_type: node
+bundle: veterinarian
+label: Biography
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
