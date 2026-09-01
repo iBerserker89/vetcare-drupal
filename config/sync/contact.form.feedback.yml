@@ -1,0 +1,12 @@
+uuid: d3278b8a-d480-45a5-8067-0c93b5d68e99
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: Contact
+recipients:
+  - hello@vetcare.local
+reply: ''
+weight: 0
+message: ''
+redirect: ''

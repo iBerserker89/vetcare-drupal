@@ -1,0 +1,14 @@
+uuid: 7cedcbff-7ddd-4264-9d01-74011b4040ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.receptionist
+  module:
+    - user
+id: user_add_role_action.receptionist
+label: 'Add the Receptionist role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: receptionist

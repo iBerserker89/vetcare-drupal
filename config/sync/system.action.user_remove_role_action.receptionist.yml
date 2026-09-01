@@ -1,0 +1,14 @@
+uuid: 637ee64a-3136-472d-b2f6-c6840248fb90
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.receptionist
+  module:
+    - user
+id: user_remove_role_action.receptionist
+label: 'Remove the Receptionist role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: receptionist
